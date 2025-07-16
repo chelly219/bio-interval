@@ -32,7 +32,7 @@
   </style>
 </head>
 <body>
-  <h2>CKD's<br> 3SD / Prediction / Tolerance / Confidence <br> Interval Calculator</h2>
+  <h2>CKD's<br> 3SD / Prediction / Tolerance <br> Interval Calculator</h2>
 
   <!-- Test method name 입력창 -->
   <label><strong>Test Method Name</strong><small> (optional):</small><input type="text" id="methodName" placeholder="e.g. SE-HPLC"/></label>
@@ -47,7 +47,7 @@
 
   
   <label>Confidence Level (%): <input type="number" id="confidence" value="95"></label>
-  <label>Tolerance Coverage (%): <input type="number" id="tolerance" value="99"></label>
+  <label>Tolerance Coverage (%)(99 or 95%): <input type="number" id="tolerance" value="99"></label>
   <button onclick="calculate()">Calculate Intervals</button>
   <div id="result"></div>
   <div id="plot"></div>
@@ -248,8 +248,8 @@
           { type: 'line', x0: tolHigh, x1: tolHigh, yref: 'paper', y0: 0, y1: 1, line: { color: '#3CB371', dash: 'dot'  } },
 
           // Confidence
-          { type: 'line', x0: confiLow, x1: confiLow, yref: 'paper', y0: 0, y1: 1, line: { color: '#4169E1', dash: 'dot' } },
-          { type: 'line', x0: confiHigh, x1: confiHigh, yref: 'paper', y0: 0, y1: 1, line: { color: '#4169E1', dash: 'dot' } },
+          //{ type: 'line', x0: confiLow, x1: confiLow, yref: 'paper', y0: 0, y1: 1, line: { color: '#4169E1', dash: 'dot' } },
+          //{ type: 'line', x0: confiHigh, x1: confiHigh, yref: 'paper', y0: 0, y1: 1, line: { color: '#4169E1', dash: 'dot' } },
 
           // ±3SD
           { type: 'line', x0: sd3Low, x1: sd3Low, yref: 'paper', y0: 0, y1: 1, line: { color: '#980000', dash: 'dot' } },
