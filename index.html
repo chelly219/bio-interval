@@ -183,10 +183,12 @@
         [${sd3Low.toFixed(2)}, ${sd3High.toFixed(2)}]<br><br>
 
         <p style="color:#FF6347; font-weight:bold;">🎯 Prediction Interval (for 1 future value):</p>
+        <em><small>해석: 미래 1개 제품이 ${conf}%의 신뢰도로 이 범위 안에 들어온다</small></em><br><br>
+
         [${predLow.toFixed(2)}, ${predHigh.toFixed(2)}]<br><br>
 
-        <p style="color:#3CB371; font-weight:bold;">🎯 Tolerance Interval (covers ${cover.toFixed(1)}%, ${conf}% confidence):</p>
-        <em><small>제품의 ${cover}%가 ${conf}%의 신뢰도로 이 범위 안에 들어온다</small></em><br><br>
+        <p style="color:#3CB371; font-weight:bold;">🎯 Tolerance Interval (covers ${cover}%, ${conf}% confidence):</p>
+        <em><small>해석: 제품의 ${cover}%가 ${conf}%의 신뢰도로 이 범위 안에 들어온다</small></em><br><br>
         [${tolLow.toFixed(2)}, ${tolHigh.toFixed(2)}] <em><small>(Howe Table Interpolation, similar to JMP)</small></em><br><br>
 
         <p style="color:#4169E1; font-weight:bold;">🎯 Confidence Interval (mean):</p>
